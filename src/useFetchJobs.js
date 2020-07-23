@@ -8,7 +8,7 @@ const ACTIONS = {
 };
 
 const BASE_URL =
-  'https://cors-anywhere.herokuapp.com/jobs.gihub.com/positions.json';
+  'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json';
 
 function reducer(state, action) {
   switch (action.type) {
@@ -23,7 +23,6 @@ function reducer(state, action) {
         error: action.payload.error,
         jobs: [],
       };
-
     default:
       return state;
   }
